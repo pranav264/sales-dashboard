@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Button } from 'primereact/button';
+import React from 'react';
 import { Rating } from 'primereact/rating';
 import { productsData } from '../data';
 import { IndianRupee } from 'lucide-react';
 
 const Products = () => {
-    const [products, setProducts] = useState(productsData);
-
   return (
     <div className="w-full">
       <div className="bg-white rounded-lg flex flex-col gap-5 p-10">

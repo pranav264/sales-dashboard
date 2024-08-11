@@ -10,24 +10,16 @@ import { MoveUp } from "lucide-react";
 
 const Home = () => {
   const [openSideBar, setOpenSideBar] = useState(false);
-  const [className, setClassName] = useState("sidebar sidebar--isHidden");
 
   const handleSideBar = () => {
     setOpenSideBar(!openSideBar);
-
-    if(className.includes("sidebar--isHidden")) {
-        setClassName("sidebar");
-    }
-    else {
-        setClassName("sidebar sidebar--isHidden");
-    }
   };
 
   return (
     <div>
-            <SidebarComponent handleSideBar={handleSideBar} openSideBar={openSideBar} setOpenSideBar={setOpenSideBar} className={className} />
+            <SidebarComponent openSideBar={openSideBar} setOpenSideBar={setOpenSideBar} />
       <div className="roboto-regular px-10 py-10">
-          <TopBar handleSideBar={handleSideBar} className={className} />
+          <TopBar handleSideBar={handleSideBar} />
           <Stats />
           <Charts />
           <div id="tables" className="flex flex-col md:flex-row md:justify-center md:items-start gap-2 p-10">

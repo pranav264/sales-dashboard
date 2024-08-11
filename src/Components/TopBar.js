@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Avatar } from "primereact/avatar";
 import { Menu } from "lucide-react";
 

@@ -1,8 +1,8 @@
-import { ChartLine, ChartPie, CircleX, Linkedin, Table } from "lucide-react";
-import React, { useState } from "react";
-import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import { ChartLine, ChartPie, Linkedin, Table } from "lucide-react";
+import React from "react";
+import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 
-const SidebarComponent = ({ handleSideBar, openSideBar, setOpenSideBar, className }) => {
+const SidebarComponent = ({ openSideBar, setOpenSideBar }) => {
   return (
       <Sidebar
         onBackdropClick={() => setOpenSideBar(false)}
